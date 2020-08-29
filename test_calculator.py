@@ -10,3 +10,6 @@ def test_add_float():
 
 def test_add_string():
     assert calculator.add("Hello ","World") == "Hello World"
+
+def test_factorial():
+    assert calculator.factorial(4) == 24
