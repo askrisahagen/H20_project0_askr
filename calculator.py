@@ -3,7 +3,7 @@ def add(x, y):
 
 def factorial(x):
     if x < 0:
-        return "This factorial only works with positiv real numbers"
+        return "This factorial only works with integers"
 
     elif x == 0 or x == 1:
         return 1

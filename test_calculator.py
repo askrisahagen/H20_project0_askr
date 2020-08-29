@@ -11,5 +11,11 @@ def test_add_float():
 def test_add_string():
     assert calculator.add("Hello ","World") == "Hello World"
 
-def test_factorial():
+def test_factorial_integer():
     assert calculator.factorial(4) == 24
+
+def test_factorial_negativ():
+    assert calculator.factorial(-1) == "This factorial only works with integers"
+
+def test_factorial_zero():
+    assert calculator.factorial(0) == 1
