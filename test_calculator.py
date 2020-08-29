@@ -32,3 +32,14 @@ def test_divide_floats():
     from math import isclose
 
     assert isclose(calculator.divide(0.4,0.1), 4.0)
+
+def test_abs_integer():
+    assert calculator.abs(-3) == 3
+
+def test_abs_float():
+    from math import isclose
+
+    assert isclose(calculator.abs(20.2),20.2)
+
+def test_nthroot():
+    assert calculator.nthroot(27,3) == 3 

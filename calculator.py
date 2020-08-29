@@ -24,3 +24,9 @@ def sin(x,n):
 
 def divide(x,y):
     return x/y
+
+def abs(x):
+    return (x**2)**0.5
+
+def nthroot(x,n):
+    return x**(1/n)
