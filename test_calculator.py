@@ -19,3 +19,8 @@ def test_factorial_negativ():
 
 def test_factorial_zero():
     assert calculator.factorial(0) == 1
+
+def test_sin():
+    import math
+
+    assert math.isclose(calculator.sin(math.pi/3,5), 3**0.5/2)
