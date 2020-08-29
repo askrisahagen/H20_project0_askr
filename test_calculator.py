@@ -24,3 +24,11 @@ def test_sin():
     import math
 
     assert math.isclose(calculator.sin(math.pi/3,5), 3**0.5/2)
+
+def test_divide_integers():
+    assert calculator.divide(12,-3) == -4
+
+def test_divide_floats():
+    from math import isclose
+
+    assert isclose(calculator.divide(0.4,0.1), 4.0)

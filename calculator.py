@@ -21,3 +21,6 @@ def sin(x,n):
         a += (-1)**i*x**(2*i+1)/factorial(2*i+1)
     
     return a
+
+def divide(x,y):
+    return x/y
