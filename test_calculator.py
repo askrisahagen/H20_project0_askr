@@ -53,4 +53,4 @@ def test_divide_raises_ZeroDivision_Error(arg):
         calculator.divide(arg[0],arg[1])
 
 def test_for_workflow():
-    assert calculator.add(1,1) == 2
+    assert calculator.add(1,1) == 1
