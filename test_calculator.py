@@ -49,3 +49,10 @@ def test_add_raises_TypeError():
 
     with pytest.raises(TypeError):
         calculator.add(2,"you")
+
+def test_divide_raises_ZeroDivision_Error():
+    import pytest
+
+    with pytest.raises(ZeroDivisionError):
+        calculator.divide(4,0)
+
