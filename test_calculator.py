@@ -43,3 +43,9 @@ def test_abs_float():
 
 def test_nthroot():
     assert calculator.nthroot(27,3) == 3 
+
+def test_add_raises_TypeError():
+    import pytest
+
+    with pytest.raises(TypeError):
+        calculator.add(2,"you")
