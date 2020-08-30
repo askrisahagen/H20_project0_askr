@@ -51,3 +51,6 @@ def test_add_raises_TypeError(arg):
 def test_divide_raises_ZeroDivision_Error(arg):
     with pytest.raises(ZeroDivisionError):
         calculator.divide(arg[0],arg[1])
+
+def test_for_workflow():
+    assert calculator.add(1,1) == 2
